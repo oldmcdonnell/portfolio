@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import { Link } from "react-router-dom"
 import { useState } from "react";
 import MyNavbar from './MyNavbar'
 
@@ -18,7 +17,6 @@ function App() {
       style={{ color: 'white' }}
     > 
     <MyNavbar />
-    <CounterButton />
     <div></div>
       <Title />
       <Link className="text-light" to='/about'>About</Link>

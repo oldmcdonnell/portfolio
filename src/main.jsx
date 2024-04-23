@@ -8,8 +8,7 @@ import {
 // project styles
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-
-import MyNavbar from MyNavbar.jsx
+import '../css/style.css'
 import About from './About'
 import App from './App'
 import Contact from './Contact'
