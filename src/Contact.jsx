@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import MyNavbar from "./MyNavbar"
 import selfie from '../img/selfie.jpg'
-
+import github from '../img/Github.svg'
 
 function Contact() {
   return (
@@ -9,7 +9,7 @@ function Contact() {
         <MyNavbar />
         <div className="d-flex justify-content-center"><Link to='/'><img src={selfie} className="profileImage"></img></Link></div>
 
-        <h1>Contacts</h1>
+        <div className="d-flex justify-content-center"><h1>Contacts</h1></div>
         <p> test </p>
     </div>
   )

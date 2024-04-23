@@ -12,9 +12,10 @@ const Title = () => {
 
 function App() {
   return (
-    <div 
-      className="bg-secondary h-100 p-5"
-      style={{ color: 'white' }}
+    <div className="p-5"
+      /*-className="justify-content-Center"-*/
+      /*-className="bg-secondary h-100 p-5"
+      style={{ color: 'white' }}-*/
     > 
     <MyNavbar />
     <div></div>
