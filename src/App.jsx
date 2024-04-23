@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
+import { useState } from "react";
+import MyNavbar from './MyNavbar'
 
 const Title = () => {
   return (
@@ -11,11 +14,17 @@ const Title = () => {
 function App() {
   return (
     <div 
-      className="bg-primary h-100 p-5"
+      className="bg-secondary h-100 p-5"
       style={{ color: 'white' }}
-    >
-      <Link className="text-light" to='/about'>About</Link>
+    > 
+    <MyNavbar />
+    <CounterButton />
+    <div></div>
       <Title />
+      <Link className="text-light" to='/about'>About</Link>
+      <p>
+      <Link className="text-light" to='/contact'>contacts</Link>
+      </p>
     </div>
   )
 }
