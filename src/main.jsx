@@ -16,7 +16,8 @@ import Contact from './Contact'
 import ErrorPage from './ErrorPage'
 import Blog from './Blog'
 import MyNavbar from './MyNavbar'
-
+import Header from './Header'
+import Footer from './Footer'
 
 const site = import.meta.env.BASE_URL
 
@@ -24,11 +25,12 @@ const site = import.meta.env.BASE_URL
 function Layout() {
   return (
       <>
+        <Header />
         <MyNavbar />
         <div id='page-content'>
           <Outlet />
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </>
   )
 }
