@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { useState } from "react";
-import MyNavbar from './MyNavbar'
+
 
 const Title = () => {
   return (
@@ -12,12 +12,12 @@ const Title = () => {
 
 function App() {
   return (
-    <div className="p-5"
+    <div
       /*-className="justify-content-Center"-*/
       /*-className="bg-secondary h-100 p-5"
       style={{ color: 'white' }}-*/
     > 
-    <MyNavbar />
+
     <div></div>
       <Title />
       <Link className="text-light" to='/about'>About</Link>

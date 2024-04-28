@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom"
-import MyNavbar from "./MyNavbar"
 
 function About() {
   return (
     <div className="p-5">
-      <MyNavbar />
       <Link to='/'>{'<- Back'}</Link>
       <h1>About Page</h1>
       <p>My Name is Eoin McDonnell</p>

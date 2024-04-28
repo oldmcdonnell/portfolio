@@ -11,11 +11,11 @@ function MyNavbar() {
     <Container>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Link className="text-black-50 px-3" to="/">Home</Link>
-            <Link className="text-black-50 px-3" to="/about">About</Link>
-            <Link className="text-black-50 px-3 " to="/contact">Contact</Link>
-            <Link className="text-black-50 px-3 " to="/Blog">Blog</Link>
+          <Nav className="me-auto Navbar">
+            <Link className="text-black-50 px-3 navbar" to="/">Home</Link>
+            <Link className="text-black-50 px-3 navbar" to="/about">About</Link>
+            <Link className="text-black-50 px-3 navbar" to="/contact">Contact</Link>
+            <Link className="text-black-50 px-3 navbar" to="/Blog">Blog</Link>
           </Nav>
         </Navbar.Collapse>
     </Container>

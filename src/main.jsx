@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
   createBrowserRouter,
-  RouterProvider
+  RouterProvider,
+  Outlet,
 } from 'react-router-dom'
 
 // project styles
@@ -14,27 +15,48 @@ import App from './App'
 import Contact from './Contact'
 import ErrorPage from './ErrorPage'
 import Blog from './Blog'
+import MyNavbar from './MyNavbar'
+
 
 const site = import.meta.env.BASE_URL
 
+
+function Layout() {
+  return (
+      <>
+        <MyNavbar />
+        <div id='page-content'>
+          <Outlet />
+        </div>
+        {/* <Footer /> */}
+      </>
+  )
+}
+
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <App />,
-    errorElement: <ErrorPage />
-  },
-  {
-    path: '/about',
-    element: <About />
-  },
-  {
-    path: '/Contact',
-    element: <Contact />
-  },
-  {
-    path: '/Blog',
-    element: <Blog />
-  },
+    element: <Layout />,
+    errorElement: <ErrorPage />,
+    children: [
+        {
+            path: '/',
+            element: <App />,
+            errorElement: <ErrorPage />
+          },
+          {
+            path: '/about',
+            element: <About />
+          },
+          {
+            path: '/Contact',
+            element: <Contact />
+          },
+          {
+            path: '/Blog',
+            element: <Blog />
+          },
+    ]
+  }
 ], {
   basename: site
 })

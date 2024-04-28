@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 // import { Accordion } from "react-bootstrap"
 
-function Blog() {
+function Week3() {
     return(
-        <div>test</div>
+        <div>Week 3 test</div>
     )
 }
 
-export default Blog
+export default Week3
