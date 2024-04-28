@@ -7,11 +7,11 @@ import { Link } from "react-router-dom"
 
 function MyNavbar() {
     return (
-    <Navbar className='bg-body-tertiary justify-content-between'>
+    <Navbar collapseOnSelect expand="lg" className='bg-body-tertiary'>
     <Container>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto Navbar">
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mx-auto Navbar">
             <Link className="text-black-50 px-3 navbar" to="/">Home</Link>
             <Link className="text-black-50 px-3 navbar" to="/about">About</Link>
             <Link className="text-black-50 px-3 navbar" to="/contact">Contact</Link>

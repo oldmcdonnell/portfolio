@@ -4,9 +4,13 @@ import { useState } from "react";
 
 const Title = () => {
   return (
+    <div className="container">
+    <div className="">
     <h1>
-      Hello World!
+Eoin McDonnell portfolio
     </h1>
+    </div>
+    </div>
   )
 }
 
