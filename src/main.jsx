@@ -18,6 +18,7 @@ import Blog from './Blog'
 import MyNavbar from './MyNavbar'
 import Header from './Header'
 import Footer from './Footer'
+import Week6 from './blog/Week6'
 
 const site = import.meta.env.BASE_URL
 
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
           {
             path: '/Blog',
             element: <Blog />
+          },
+          {
+            path: '/Week6',
+            element: <Week6 />
           },
     ]
   }

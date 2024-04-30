@@ -17,6 +17,7 @@ background-color: white;
 margin: 0;
 font: 100% / 1.5 Raleway, sans-serif;
 color: hsl(230, 100%, 95%);
+
 }
 
 .iconStyle{
@@ -117,7 +118,7 @@ height: 400px;
     
   }
  
-  /*-
+  
   body {
     margin: 0;
     font: 100% / 1.5 Raleway, sans-serif;
@@ -126,7 +127,7 @@ height: 400px;
     height: 100vh;
     display: flex;
   }
-    -*/
+
 
   h2 {
     margin: auto;

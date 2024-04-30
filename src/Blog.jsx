@@ -3,7 +3,10 @@ import { Link } from "react-router-dom"
 
 function Blog() {
     return(
-        <div>test</div>
+        <div>
+        <div>Blog</div>
+        <Link className="text-light" to='/Week6'>Week 6</Link>
+        </div>
     )
 }
 
