@@ -17,6 +17,7 @@ background-color: white;
 margin: 0;
 font: 100% / 1.5 Raleway, sans-serif;
 color: hsl(230, 100%, 95%);
+overflow: hidden;
 
 }
 
@@ -30,7 +31,7 @@ text-decoration: none;
 font: Arial;
 color: rgb(11, 7, 40);
 font-size: large;
-
+z-index: 1000;
 
 }
 
@@ -41,6 +42,7 @@ font-size: large;
   font-family: 'Menace', sans-serif;
   font-weight: bolder;
   text-align: center;  
+  z-index: 1000;
 }
 
 .awesomeIcon {
@@ -52,10 +54,18 @@ font-size: large;
 
 .profileImage {
     height: 20rem;
+    align-content: center;
     width: auto;
     clip-path: circle(60%);
 }
-   
+ 
+.paintingImage {
+  max-width: 5%;
+  max-height: auto;
+  aspect-ratio: 1;
+  align-content: center;
+  clip-path: circle(70%);
+}
 /* Default height for small devices */
 #intro-example {
 height: 400px;
