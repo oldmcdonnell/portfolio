@@ -19,6 +19,7 @@ import MyNavbar from './MyNavbar'
 import Header from './Header'
 import Footer from './Footer'
 import Week6 from './blog/Week6'
+import { createContext } from 'react'
 
 const site = import.meta.env.BASE_URL
 

@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"
-import MyNavbar from "./MyNavbar"
 import selfie from '../img/selfie.jpg'
-import github from '../img/Github.svg'
+import Email from '../img/Email.svg'
+import Github from '../img/Github.svg'
+import Instagram from '../img/Instagram.svg'
 
 function Contact() {
   return (

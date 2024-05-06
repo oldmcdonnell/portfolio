@@ -36,7 +36,7 @@ font-size: large;
 
 .headerStyle {
   background-color: black;
-  color: rgb(180, 107, 107);
+  color: rgb(194, 184, 213);
   font-size: large;
   font-family: 'Menace', sans-serif;
   font-weight: bolder;
@@ -127,7 +127,6 @@ height: 400px;
     height: 100vh;
     display: flex;
   }
-
 
   h2 {
     margin: auto;
