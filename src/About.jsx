@@ -6,9 +6,9 @@ function About() {
       <Link to='/'>{'<- Back'}</Link>
       <h1>About Page</h1>
       <p>My Name is Eoin McDonnell</p>
-      <p>I have a Bfa in 3-D Computer andimation and a MA is Digital Media technologies. I am currently training </p>
-      <p>with Aweseome INC as a full stack developer and for a MS in Cybersecurity with NKU</p>
-      <p></p>
+      <p>I am training to become a full stack developer, I am also in school for cybersecurity </p>
+      <p>with Awesome inc and NKU respectively. I have programmed on and for for several years</p>
+      <p>My specialty is SQL, Python and now Javascript</p>
       <p>I am originall from Dublin, Ireland and am a dual citizen. I am also an avid runner and</p>
 
     </div>

@@ -17,7 +17,7 @@ return (
             If you were to build a CLI, what would it do?
             </h4>
             <p>
-            I would make a CLI that would make 
+            I would create a CLI that would answer any question possible. It would need to be able to use an API with anothropic or some other AI information
             </p>
         </div>
         <div className="col-4 mx-auto">
