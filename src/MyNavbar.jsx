@@ -12,7 +12,7 @@ function MyNavbar() {
     <Container>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto Navbar">
+          <Nav className="mx-auto Navbar col-m-6">
             <Link className="text-black-50 px-3 navbar" to="/">Home</Link>
             <Link className="text-black-50 px-3 navbar" to="/about">About</Link>
             <Link className="text-black-50 px-3 navbar" to="/contact">Contact</Link>
