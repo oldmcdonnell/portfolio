@@ -18,21 +18,21 @@ function Contact() {
     <div className="row justify-content-center align-items-md-center">
       <div className="d-flex justify-content-center col-sm-6 col-md-4 p-3 bg-light semiOpacity">
         <a href="mailto:oldmcdonnell@gmail.com">
-          <img src={Email} class="iconStyle">
+          <img src={Email} class="iconStyle" />
         </a>
         </div>
       <div className="d-flex justify-content-center col-sm-6 col-md-4 p-3 bg-light semiOpacity">
-        <img src={Phone} class="iconStyle"> </div>
+        <img src={Phone} class="iconStyle" /> </div>
       <div className="d-flex justify-content-center col-sm-6 col-md-4 p-3 bg-light semiOpacity">
         <a href="https://github.com/oldmcdonnell">
-          <img src={Github} class="iconStyle">
+          <img src={Github} class="iconStyle" />
             </a>
             </div>
     </div>
     <div className="row">
       <div className="d-flex justify-content-center col-sm-6 col-md-4 p-3 bg-light semiOpacity">
         <a href="gram.com/mcdonnell.eoin/">
-          <img src={Instagram} class="iconStyle">
+          <img src={Instagram} class="iconStyle" />
             </a></div>
       <div className="d-flex justify-content-center col-sm-6 col-md-4 p-3 bg-light semiOpacity">
         <a href="https://www.linkedin.com/in/eoin-mcdonnell-01078923/">
