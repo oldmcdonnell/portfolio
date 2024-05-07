@@ -2,17 +2,6 @@ import { Link } from "react-router-dom"
 import { useState } from "react";
 import LandingPage from "./LandingPage";
 
-const Title = () => {
-  return (
-    <div className="container">
-    <div className="">
-    <h1>
-Eoin McDonnell portfolio
-    </h1>
-    </div>
-    </div>
-  )
-}
 
 function App() {
   return (
@@ -23,7 +12,6 @@ function App() {
     > 
 
     <div></div>
-      <Title />
       <LandingPage />
       <Link className="text-light" to='/about'>About</Link>
       <p>

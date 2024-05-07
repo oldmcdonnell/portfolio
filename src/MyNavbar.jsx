@@ -17,7 +17,7 @@ function MyNavbar() {
             <Link className="text-black-50 px-3 navbar" to="/about">About</Link>
             <Link className="text-black-50 px-3 navbar" to="/contact">Contact</Link>
             <Link className="text-black-50 px-3 navbar" to="/Blog">Blog</Link>
-            <Link className="text-black-50 px-3 navbar" to="/Project">Project</Link>
+            <Link className="text-black-50 px-3 navbar" to="/Projects">Project</Link>
           </Nav>
         </Navbar.Collapse>
     </Container>

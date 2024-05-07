@@ -14,7 +14,7 @@ a:hover{
 
 body{
 padding: 5px;
-background-image: url(/img/landing_page.jpg);
+/*-background-image: url(/img/landing_page.jpg);-*/
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center center;
@@ -23,9 +23,16 @@ background-color: white;
 margin: 0;
 font: 100% / 1.5 Raleway, sans-serif;
 color: hsl(230, 100%, 95%);
-overflow: scroll;
-
 }
+
+body {
+  margin: 0;
+  font: 100% / 1.5 Raleway, sans-serif;
+  color: hsl(230, 100%, 95%);
+  background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
+  height: 100vh;
+}
+
 
 .iconStyle{
     height: 10rem;
@@ -37,7 +44,7 @@ text-decoration: none;
 font: Arial;
 color: rgb(11, 7, 40);
 font-size: large;
-z-index: 1000;
+/* z-index: 1000; */
 
 }
 
@@ -48,7 +55,7 @@ z-index: 1000;
   font-family: 'Menace', sans-serif;
   font-weight: bolder;
   text-align: center;  
-  z-index: 1000;
+  /* z-index: 1000; */
 }
 
 .awesomeIcon {
@@ -66,11 +73,13 @@ z-index: 1000;
 }
  
 .paintingImage {
-  max-width: 5%;
+  max-width: 45%;
   max-height: auto;
   aspect-ratio: 1;
   align-content: center;
-  clip-path: circle(70%);
+  clip-path: circle(60%);
+  text-align: center;
+  align-content: center; 
 }
 /* Default height for small devices */
 #intro-example {
@@ -135,14 +144,6 @@ height: 400px;
   }
  
   
-  body {
-    margin: 0;
-    font: 100% / 1.5 Raleway, sans-serif;
-    color: hsl(230, 100%, 95%);
-    background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
-    height: 100vh;
-    display: flex;
-  }
 
   h2 {
     margin: auto;
