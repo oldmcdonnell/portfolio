@@ -16,8 +16,12 @@ const Title = () => {
 function LandingPage (){
     return(
         <>
-        <div className='d-flex mx-auto'>
+        <div className='d-flex mx-auto col-6'>
             <img className='paintingImage' src={Painting} />
+            <p>
+                Some sample asdfasdfa asdf asdf asdf asdf asdf   
+                tesxt
+            </p>
 
         </div>
          
