@@ -1,5 +1,4 @@
 import { Container } from "react-bootstrap"
-import Row from "react-bootstrap"
 import { Link } from "react-router-dom"
 import TicTacToe from '../img/ticTacToe.jpg'
 import TodoList from '../img/todo_list.jpg'
@@ -25,4 +24,4 @@ function Projects() {
     )
   }
   
-  export default Projects
+  export default Projects;
