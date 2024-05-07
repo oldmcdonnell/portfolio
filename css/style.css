@@ -5,6 +5,12 @@ a:hover{
   color: blueviolet;
 }
 
+.imageLink{
+  max-width: 20%;
+  max-height: auto;
+  aspect-ratio: 1;
+  align-content: center;
+}
 
 body{
 padding: 5px;
@@ -17,7 +23,7 @@ background-color: white;
 margin: 0;
 font: 100% / 1.5 Raleway, sans-serif;
 color: hsl(230, 100%, 95%);
-overflow: hidden;
+overflow: scroll;
 
 }
 
