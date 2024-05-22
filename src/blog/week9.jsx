@@ -18,6 +18,7 @@ return (
         <p>- using multiple excepts for the same try</p>
         <p>the python </p>
         <p>DoesNotExist and exisits</p>
+        <p>The through fuction in a class in models for many to many</p>
 
         <p></p>
     </div>
