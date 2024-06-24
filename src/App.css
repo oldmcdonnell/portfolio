@@ -1,15 +1,20 @@
-html {
+html, body {
   height: 100%;
 }
+
 body {
-  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
+
 #root {
   display: flex;
   height: 100%;
   flex-direction: column;
   justify-content: space-around;
 }
+
 #page-content {
   flex-grow: 2;
 }
@@ -30,4 +35,15 @@ body {
 
 .awesomeIcon {
   font-size: 50px;
+}
+
+/* Additional styles for Blog component */
+.blog-header {
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.blog-preview {
+  font-style: italic;
+  color: gray;
 }
