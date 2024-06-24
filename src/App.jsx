@@ -13,9 +13,8 @@ function App() {
 
     <div></div>
       <LandingPage />
-      <Link className="text-light" to='/about'>About</Link>
       <p>
-      <Link className="text-light" to='/contact'>contacts</Link>
+
       </p>
     </div>
   )

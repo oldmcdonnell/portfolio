@@ -1,35 +1,39 @@
-import Painting from '../img/paint_for_website.jpg'
+import React from 'react';
+import Painting from '../img/paint_for_website.jpg';
+import { Container, Row, Col } from 'react-bootstrap';
 
-
+// Title Component
 const Title = () => {
     return (
-      <div className="container">
-      <div className="">
-      <h1>
-  Eoin McDonnell portfolio
-      </h1>
-      </div>
-      </div>
-    )
-  }
+        <Container>
+            <div className="text-center my-4">
+                <h1>Eoin McDonnell's Portfolio</h1>
+            </div>
+        </Container>
+    );
+};
 
-  /*-whe ist't this working?-*/
-function LandingPage (){
-    return(
+// LandingPage Component
+function LandingPage() {
+    return (
         <>
-        <div className='d-flex mx-auto col-6'>
-            <img className='paintingImage' src={Painting} />
-            <p>
-               Hello and welcome to my portfolio. I am a software developer who has a lot of experience in things that are not easy to show off. A lot of my work
-               has been with SQL databases. Helping troubleshoot problem for companies like Diebold, Garda, and Brinks.I have been interested and working in tech for many years.
-               I have had a lot of different roles like technical support, to quality assurance, to animator, to programmer.   
-            </p>
+            <Title />
+            <Container>
+                <Row className="justify-content-center align-items-center">
+                    <Col md={6}>
+                        <img className='img-fluid paintingImage' src={Painting} alt="Painting" />
+                    </Col>
+                    <Col md={6}>
+                        <p>
+                        I can offer a wealth of knowledge under pressure as someone who has had to help fix databases of major armored car carriers like Brinks, Diebold, Loomis, and Garda. Sometimes these calls would occur when I was on call as their IT was doing upgrades… so middle of the night on a Saturday when customer impact would be minimal. Currently my focus is in development, building and creating programs and systems. I have I have a great ability to learn quickly. In the past I have created documentation not just for end-users but other people on my team that is clear and concise. This is an example of a document pared down from a 22 page document to 2 pages in order to setup an auditcon lock. https://dormakaba.rokka.io/original/5d1921/1638395645_Auditcon-Quick%20Guide-Oct%202021-A1.pdf
 
-        </div>
-         
+99% of auditcon calls to dormakaba were techs in the field setting up the lock initially for the customer and struggling with the 22 page document. This was also done for cost saving measures as it would be cheaper to print.
+                        </p>
+                    </Col>
+                </Row>
+            </Container>
         </>
-    )
-
+    );
 }
 
-export default LandingPage
+export default LandingPage;
