@@ -47,3 +47,8 @@ body {
   font-style: italic;
   color: gray;
 }
+
+img.paintingImage {
+  max-width: 100%;
+  height: auto;
+}
