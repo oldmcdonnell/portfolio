@@ -33,7 +33,7 @@ function Layout() {
         <div id='page-content'>
           <Outlet />
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </>
   )
 }

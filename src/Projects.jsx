@@ -7,12 +7,20 @@ import { Link } from "react-router-dom"
 import TicTacToe from '../img/ticTacToe.jpg'
 import TodoList from '../img/todo_list.jpg'
 import WeatherApp from '../img/weatherApp.jpg'
-
+import PreferredPolls from '../img/preferredPolls.png'
 
 
 function Projects(){
     return(
         <CardGroup>
+            <Card>
+                <Link className="text-light" to='https://preferred-polls.vercel.app/'>
+                <Card.Img variant="top" src={TicTacToe} />
+                </Link>
+                <Card.Body>
+                <Card.Title>Tic Tac Toe</Card.Title>
+                </Card.Body>
+            </Card>
             <Card>
                 <Link className="text-light" to='https://oldmcdonnell.github.io/tic-tac-toe/'>
                 <Card.Img variant="top" src={TicTacToe} />
