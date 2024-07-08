@@ -6,11 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --outDir docs",
-    "preview": "vite preview"
+    "preview-build": "vite preview --outDir docs"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "emailjs": "^4.0.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
