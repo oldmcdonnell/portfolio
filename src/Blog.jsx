@@ -3,7 +3,9 @@ import { Container } from 'react-bootstrap';
 import Week6 from './blog/Week6';
 import Week7 from './blog/Week7';
 import Week8 from './blog/Week8';
-import Week9 from './blog/week9';
+import Week9 from './blog/Week9';
+import CV from '../docs/CV_2024_05_17.pdf';
+import VidBlog from './blog/VidBlog.jsx'; // Import the VidBlog component
 
 function Blog() {
     const [expandedPost, setExpandedPost] = useState(null);
@@ -20,6 +22,30 @@ function Blog() {
                 </div>
 
                 <div>
+                    <h4
+                        onClick={() => toggleExpand('CV')}
+                        className="blog-header"
+                    >
+                        CV {expandedPost === 'CV' ? '-' : '+'}
+                    </h4>
+                    {expandedPost === 'CV' ? (
+                        <div className="cv-content">
+                            <a href={CV} target="_blank" rel="noopener noreferrer">
+                                View CV (PDF)
+                            </a>
+                        </div>
+                    ) : null}
+
+                    <h4
+                        onClick={() => toggleExpand('Video')}
+                        className="blog-header"
+                    >
+                        Video {expandedPost === 'Video' ? '-' : '+'}
+                    </h4>
+                    {expandedPost === 'Video' ? (
+                        <VidBlog />
+                    ) : null}
+
                     <h4
                         onClick={() => toggleExpand('Week6')}
                         className="blog-header"
