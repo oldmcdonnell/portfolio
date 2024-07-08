@@ -4,7 +4,7 @@ import Week6 from './blog/Week6';
 import Week7 from './blog/Week7';
 import Week8 from './blog/Week8';
 import Week9 from './blog/Week9';
-import CV from '../docs/CV_2024_05_17.pdf';
+import CV from '../docs/cv_2024-07-08.pdf';
 import VidBlog from './blog/VidBlog.jsx'; // Import the VidBlog component
 
 function Blog() {
