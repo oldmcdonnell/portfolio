@@ -79,3 +79,14 @@ img.paintingImage {
     font-size: 20px;
   }
 }
+
+.back-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.2em;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
