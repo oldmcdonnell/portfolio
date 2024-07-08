@@ -4,8 +4,8 @@ import Week6 from './blog/Week6';
 import Week7 from './blog/Week7';
 import Week8 from './blog/Week8';
 import Week9 from './blog/Week9';
-import CV from '../docs/assets/CV_2024_07_08.pdf'
-import VidBlog from './blog/VidBlog.jsx'; 
+import CV from '../docs/assets/CV_2024_07_08.pdf';
+import VidBlog from './blog/VidBlog.jsx';
 
 function Blog() {
     const [expandedPost, setExpandedPost] = useState(null);
@@ -28,13 +28,13 @@ function Blog() {
                     >
                         CV {expandedPost === 'CV' ? '-' : '+'}
                     </h4>
-                    {expandedPost === 'CV' ? (
+                    {expandedPost === 'CV' && (
                         <div className="cv-content">
                             <a href={CV} target="_blank" rel="noopener noreferrer">
                                 View CV (PDF)
                             </a>
                         </div>
-                    ) : null}
+                    )}
 
                     <h4
                         onClick={() => toggleExpand('Video')}
@@ -42,9 +42,9 @@ function Blog() {
                     >
                         Video {expandedPost === 'Video' ? '-' : '+'}
                     </h4>
-                    {expandedPost === 'Video' ? (
+                    {expandedPost === 'Video' && (
                         <VidBlog />
-                    ) : null}
+                    )}
 
                     <h4
                         onClick={() => toggleExpand('Week6')}
