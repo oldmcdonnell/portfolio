@@ -1,3 +1,45 @@
 {
-    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
-   }
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "docs"
+        }
+      }
+    ],
+    "headers": [
+      {
+        "source": "/portfolio/assets/(.*).js",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/javascript"
+          }
+        ]
+      },
+      {
+        "source": "/portfolio/assets/(.*).css",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "text/css"
+          }
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "src": "/portfolio/(.*)",
+        "dest": "/portfolio/index.html"
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ]
+  }
+  
