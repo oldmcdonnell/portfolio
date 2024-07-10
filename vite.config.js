@@ -13,11 +13,10 @@ export default defineConfig({
     outDir: 'docs',
     rollupOptions: {
       output: {
-        entryFileNames: 'assets/[name].js',
+        entryFileNames: 'assets/index-C5K1NyVi.js',
         chunkFileNames: 'assets/[name].js',
         assetFileNames: 'assets/[name].[ext]'
       }
     }
   }
 })
-// should this be just vite.config?
