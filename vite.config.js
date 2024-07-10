@@ -20,4 +20,4 @@ export default defineConfig({
     }
   }
 })
-// this has been updated
+// should this be just vite.config?
