@@ -9,27 +9,21 @@
         }
       }
     ],
-    "headers": [
+    "routes": [
       {
-        "source": "/portfolio/assets/(.*).js",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/javascript"
-          }
-        ]
+        "src": "/portfolio/assets/(.*).js",
+        "headers": {
+          "Content-Type": "application/javascript"
+        },
+        "dest": "/portfolio/assets/$1.js"
       },
       {
-        "source": "/portfolio/assets/(.*).css",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "text/css"
-          }
-        ]
-      }
-    ],
-    "routes": [
+        "src": "/portfolio/assets/(.*).css",
+        "headers": {
+          "Content-Type": "text/css"
+        },
+        "dest": "/portfolio/assets/$1.css"
+      },
       {
         "src": "/portfolio/(.*)",
         "dest": "/portfolio/index.html"
