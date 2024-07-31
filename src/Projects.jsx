@@ -7,6 +7,8 @@ import TicTacToe from '../img/ticTacToe.jpg';
 import TodoList from '../img/todo_list.jpg';
 import WeatherApp from '../img/weatherApp.jpg';
 import PreferredPolls from '../img/preferredPolls.png';
+import ArtSocial from '../img/artsocial.png';
+
 
 function Projects() {
   return (
@@ -20,6 +22,14 @@ function Projects() {
               </Link>
               <Card.Body>
                 <Card.Title>Preferred Polls</Card.Title>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Link className="text-light" to='https://art-social-seven.vercel.app/'>
+                <Card.Img variant="top" src={ArtSocial} />
+              </Link>
+              <Card.Body>
+                <Card.Title>Art Social</Card.Title>
               </Card.Body>
             </Card>
             <Card>
