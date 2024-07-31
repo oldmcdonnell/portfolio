@@ -1,5 +1,6 @@
 import React from 'react';
 import Painting from '../img/paint_for_website.jpg';
+import SnailKnights from '../img/SnailKnightsJousting.jpg'
 import { Container, Row, Col } from 'react-bootstrap';
 
 // Title Component
