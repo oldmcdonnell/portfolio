@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Email from '../img/Email.svg';
 import Github from '../img/Github.svg';
-
+import './App.css'; // Use App.css for all styles
 
 function Footer() {
   return (

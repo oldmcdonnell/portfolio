@@ -1,17 +1,36 @@
-/* Existing styles... */
+/* General link styles */
+a:link {
+  text-decoration: none;
+}
 
-/* Contact page specific styles */
+a:hover {
+  color: blueviolet;
+}
+
+/* Image link styles */
+.imageLink {
+  max-width: 20%;
+  max-height: auto;
+  aspect-ratio: 1;
+  align-content: center;
+}
+
+/* Body styles */
 body {
-  background-color: #1a1a2e;
-  color: #eaeaea;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: 70%;
+  background-color: white;
+  margin: 0;
+  font: 100% / 1.5 Raleway, sans-serif;
+  color: hsl(230, 100%, 95%);
+  background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%));
+  height: 100vh;
 }
 
-.profileImage {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-
+/* Icon styles */
 .iconStyle, .awesomeIcon {
   width: 50px;
   height: 50px;
@@ -26,17 +45,153 @@ body {
   color: #eaeaea; /* Adjust color as needed */
 }
 
-.icon-container {
-  background-color: rgba(255, 255, 255, 0.1); /* Light background to improve visibility */
-  border-radius: 10px;
-  padding: 20px;
-}
-
-a {
+/* Navigation bar styles */
+.navBar {
   text-decoration: none;
-  color: inherit;
+  font: Arial;
+  color: rgb(11, 7, 40);
+  font-size: large;
 }
 
-a:hover {
-  color: #007bff;
+/* Header styles */
+.headerStyle {
+  background-color: black;
+  color: rgb(194, 184, 213);
+  font-size: large;
+  font-family: 'Menace', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* Profile image styles */
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profileImage {
+  height: 20rem;
+  align-content: center;
+  width: auto;
+  clip-path: circle(60%);
+}
+
+/* Painting image styles */
+.paintingImage {
+  max-width: 45%;
+  max-height: auto;
+  aspect-ratio: 1;
+  align-content: center;
+  clip-path: circle(60%);
+  text-align: center;
+  align-content: center; 
+}
+
+/* Intro example height adjustments */
+#intro-example {
+  height: 400px;
+}
+
+/* Height for devices larger than 992px */
+@media (min-width: 992px) {
+  #intro-example {
+    height: 600px;
+  }
+}
+
+/* Animation for main page name */
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+                 0 0 0.125em hsla(320, 100%, 60%, 0.3),
+                 -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+                 1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+                 0 0 0.125em hsla(320, 100%, 60%, 0.5),
+                 -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+                 0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+                 0 0 0.125em hsla(320, 100%, 90%, 0.5),
+                 -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+                 0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+                 0 0 0.125em hsla(320, 100%, 60%, 0.5),
+                 0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+                 -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
+                 0 0 0.125em hsla(320, 100%, 60%, 0.3),
+                 1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+                 -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+}
+
+h2 {
+  margin: auto;
+  font-size: 3.5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
+}
+
+/* Hero text animation */
+.heroText {
+  margin: auto;
+  font-size: 3.5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear;
+  animation-iteration-count: 3;
+}
+
+/* Semi-opacity class */
+.semiOpacity {
+  opacity: 80%;
+}
+
+/* Footer specific styles */
+.footerIcon {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px; /* Adjust the size as needed */
+}
+
+.footerAwesomeIcon {
+  font-size: 30px; /* Adjust the size as needed */
+  color: #333; /* Ensure good contrast */
+}
+
+
+/* About section styles */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #fff; /* White text color for contrast */
+}
+
+.about-section header {
+  margin-bottom: 1.5rem;
+}
+
+.about-section h1 {
+  font-size: 2.
+}
+.cv-content {
+  margin
 }
