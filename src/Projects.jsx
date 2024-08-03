@@ -9,6 +9,7 @@ import WeatherApp from '../img/weatherApp.jpg';
 import PreferredPolls from '../img/preferredPolls.png';
 import ArtSocial from '../img/artsocial.png';
 import AWSDoc from'../img/AWS_deploy_instructions.pdf'
+import AWSExample from '../img/AwsExample.png'
 
 function Projects() {
   return (
@@ -58,7 +59,7 @@ function Projects() {
             </Card>
             <Card>
               <Link className="text-light" to=' http://060211867096-roulettech.s3-website.us-east-1.amazonaws.com/'>
-                <Card.Img variant="top" src={WeatherApp} />
+                <Card.Img variant="top" src={AWSExample} />
               </Link>
               <Card.Body>
                 <Card.Title>Deploy to AWS example</Card.Title>
