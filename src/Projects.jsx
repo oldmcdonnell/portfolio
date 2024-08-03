@@ -8,7 +8,7 @@ import TodoList from '../img/todo_list.jpg';
 import WeatherApp from '../img/weatherApp.jpg';
 import PreferredPolls from '../img/preferredPolls.png';
 import ArtSocial from '../img/artsocial.png';
-
+import AWSDoc from'../img/AWS_deploy_instructions.pdf'
 
 function Projects() {
   return (
@@ -54,6 +54,15 @@ function Projects() {
               </Link>
               <Card.Body>
                 <Card.Title>Weather App</Card.Title>
+              </Card.Body>
+            </Card>
+            <Card>
+              <Link className="text-light" to=' http://060211867096-roulettech.s3-website.us-east-1.amazonaws.com/'>
+                <Card.Img variant="top" src={WeatherApp} />
+              </Link>
+              <Card.Body>
+                <Card.Title>Deploy to AWS example</Card.Title>
+                <Card.Link href={AWSDoc} target="_blank" rel="noopener noreferrer">AWS Deployment Instructions</Card.Link>
               </Card.Body>
             </Card>
           </CardGroup>
