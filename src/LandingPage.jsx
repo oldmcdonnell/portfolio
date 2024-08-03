@@ -26,6 +26,9 @@ function LandingPage() {
                     </Col>
                     <Col md={6}>
                         <p>
+                            I am a programming who specializes in database and backend applications.
+                            I am also working towward a Master's degree in Cybersecurity. 
+                            I am working on adding to my Portfolio currently and learning new backend applications.
              
                         </p>
                     </Col>
