@@ -15,7 +15,7 @@ function Blog() {
     };
 
     return (
-        <Container id="page-content">
+        <Container id="page-content" className='mx-auto'>
             <div>
                 <div className="my-4 text-center">
                     <h2>Blog</h2>
@@ -36,7 +36,7 @@ function Blog() {
                         </div>
                     )}
 
-                    <h4
+                    {/* <h4
                         onClick={() => toggleExpand('Video')}
                         className="blog-header"
                     >
@@ -44,7 +44,7 @@ function Blog() {
                     </h4>
                     {expandedPost === 'Video' && (
                         <VidBlog />
-                    )}
+                    )} */}
 
                     <h4
                         onClick={() => toggleExpand('Week6')}
