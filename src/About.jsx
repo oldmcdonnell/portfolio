@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
-import CV from '../img/CV_2024_07_08.pdf';
+import CV from '../img/CV_2024_08_08.pdf';
 import SnailKnightJousting from '../img/SnailKnightsJousting.jpg';
 
 function About() {
