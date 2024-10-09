@@ -10,6 +10,7 @@ import PreferredPolls from '../img/preferredPolls.png';
 import ArtSocial from '../img/artsocial.png';
 import AWSDoc from'../img/AWS_deploy_instructions.pdf'
 import AWSExample from '../img/AwsExample.png'
+import PrivacyVoteDoc from '../img/620_privacy_paper_Eoin_McDonnell_v8.pdf'
 
 function Projects() {
   return (
@@ -23,6 +24,7 @@ function Projects() {
               </Link>
               <Card.Body>
                 <Card.Title>Preferred Polls</Card.Title>
+                <Card.Link href={PrivacyVoteDoc} target="_blank" rel="noopener noreferrer">Privacy in Electronic Voting Systems</Card.Link>
               </Card.Body>
             </Card>
             <Card>

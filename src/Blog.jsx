@@ -4,7 +4,8 @@ import Week6 from './blog/Week6';
 import Week7 from './blog/Week7';
 import Week8 from './blog/Week8';
 // import Week9 from './blog/Week9';
-import CV from '../img/CV_2024_08_08.pdf'
+import CV from '../img/CV_2024_08_08.pdf';
+import PrivacyVoteDoc from '../img/620_privacy_paper_Eoin_McDonnell_v8.pdf';
 import VidBlog from './blog/VidBlog.jsx';
 
 function Blog() {
@@ -32,6 +33,20 @@ function Blog() {
                         <div className="cv-content">
                             <a href={CV} target="_blank" rel="noopener noreferrer">
                                 View CV (PDF)
+                            </a>
+                        </div>
+                    )}
+
+                    <h4
+                        onClick={() => toggleExpand('Privacy')}
+                        className="blog-header"
+                    >
+                        Privacy Paper {expandedPost === 'Privacy' ? '-' : '+'}
+                    </h4>
+                    {expandedPost === 'Privacy' && (
+                        <div className="cv-content">
+                            <a href={PrivacyVoteDoc} target="_blank" rel="noopener noreferrer">
+                                View IEEE Standard Privacy in Electronic Voting Paper (PDF)
                             </a>
                         </div>
                     )}
