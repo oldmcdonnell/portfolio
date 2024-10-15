@@ -63,11 +63,37 @@ body {
 .headerStyle {
   background-color: black;
   color: rgb(194, 184, 213);
-  font-size: large;
+  font-size: .55;
   font-family: 'Menace', sans-serif;
   font-weight: bolder;
   text-align: center;
+  padding: 10px 0; /* Optional: Adds vertical padding for spacing */
 }
+
+
+/* Text background fade with curved edges landing page */
+.text-background-fade {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)); /* Fading gradient from top to bottom */
+  padding: 20px; /* Adds space around the text */
+  border-radius: 15px; /* Curves the edges */
+  color: white; /* Makes text readable on the darker background */
+  font-size: 1.2rem; /* Adjust the font size as needed */
+  line-height: 1.5; /* Adjusts line spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for a 3D effect */
+}
+
+
+.largerFont {
+  font-size: 1rem; /* Adjust this as necessary */
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .largerFont {
+    font-size: 2rem;
+  }
+}
+
 
 /* Profile image styles */
 .profileImage {
