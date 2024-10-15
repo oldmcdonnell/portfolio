@@ -22,6 +22,8 @@ import Footer from './Footer';
 import Week6 from './blog/Week6';
 import Projects from './Projects';
 import { createContext } from 'react';
+import PrivacyPaper from './PrivacyPaper';  // Make sure this is the correct path
+
 
 const site = import.meta.env.BASE_URL;
 
@@ -64,6 +66,10 @@ const router = createBrowserRouter([
         path: '/projects',
         element: <Projects />
       },
+      {
+        path: '/privacy-paper',  // Adding the new PrivacyPaper route
+        element: <PrivacyPaper />  // This renders the PrivacyPaper component
+      }
     ]
   }
 ], {

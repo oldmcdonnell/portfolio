@@ -10,7 +10,7 @@ import PreferredPolls from '../img/preferredPolls.png';
 import ArtSocial from '../img/artsocial.png';
 import AWSDoc from'../img/AWS_deploy_instructions.pdf'
 import AWSExample from '../img/AwsExample.png'
-import PrivacyVoteDoc from '../img/620_privacy_paper_Eoin_McDonnell_v8.pdf'
+import PrivacyPaper from './PrivacyPaper';
 
 function Projects() {
   return (
@@ -24,8 +24,11 @@ function Projects() {
               </Link>
               <Card.Body>
                 <Card.Title>Preferred Polls</Card.Title>
-                <Card.Link href={PrivacyVoteDoc} target="_blank" rel="noopener noreferrer">Privacy in Electronic Voting Systems</Card.Link>
-              </Card.Body>
+                {/* Replace Card.Link with React Router's Link for internal routing */}
+                <Link to="/privacy-paper" className="card-link" target="_blank" rel="noopener noreferrer">
+               Privacy in Electronic Voting Systems
+                </Link>
+            </Card.Body>
             </Card>
             <Card>
               <Link className="text-light" to='https://art-social-seven.vercel.app/'>
