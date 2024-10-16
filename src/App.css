@@ -94,6 +94,31 @@ body {
   }
 }
 
+.background-image {
+  background-image: url('../img/SnailKnightsJousting.jpg');
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the background image */
+  height: 100vh; /* Adjust this to control the height of the background (e.g., 100vh for full viewport height) */
+  width: 100%; /* Make sure it takes the full width */
+  opacity: 0.8; /* Keeps the background subtle */
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: Make sure the text container is centered */
+.text-background-fade {
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background to make text stand out */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  z-index: 2;
+  position: relative;
+  margin: auto; /* Centers the text block */
+  max-width: 600px; /* Adjust the width to your liking */
+  text-align: center;
+}
+
+
 
 /* Profile image styles */
 .profileImage {

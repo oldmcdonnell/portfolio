@@ -1,16 +1,14 @@
 import React from 'react';
-import Painting from '../img/paint_for_website.jpg';
 import { Container, Row, Col } from 'react-bootstrap';
+import './App.css'; // Make sure you import your CSS
 
 function LandingPage() {
     return (
         <>
-            <Container>
+            {/* Apply the background-image class to the container */}
+            <Container className="background-image">
                 <Row className="justify-content-center align-items-center text-center">
-                    <Col md={6} className="d-flex justify-content-center">
-                        <img className='img-fluid paintingImage' src={Painting} alt="Painting" />
-                    </Col>
-                    <Col md={6} className="text-background-fade">
+                    <Col md={12} className="text-background-fade">
                         <p>
                             I am a programmer who specializes in database and backend applications.
                             I am also working toward a Master's degree in Cybersecurity.
