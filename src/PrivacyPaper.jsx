@@ -1,10 +1,11 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';  // This works with react-helmet
 import PrivacyVoteDoc from '../img/620_privacy_paper_Eoin_McDonnell_v8.pdf';
 
 function PrivacyPaper() {
   return (
     <div>
+      {/* Helmet for managing document head */}
       <Helmet>
         <title>Privacy in Electronic Voting Systems</title>
         <meta property="og:title" content="Privacy in Electronic Voting Systems" />
@@ -13,10 +14,13 @@ function PrivacyPaper() {
         <meta property="og:url" content="https://eoin-mcdonnell.vercel.app/privacy-paper" />
         <meta property="og:type" content="article" />
       </Helmet>
+
       {/* Apply the custom class for the title */}
       <h1 className="paper-title">Privacy in Electronic Voting Systems</h1>
+
+      {/* Embedded PDF */}
       <iframe
-        src={PrivacyVoteDoc}  // Using the imported PDF variable here
+        src={PrivacyVoteDoc}
         width="100%"
         height="800px"
         title="Privacy in Electronic Voting Systems"
