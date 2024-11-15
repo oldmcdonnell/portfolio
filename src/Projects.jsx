@@ -67,7 +67,7 @@ function Projects() {
                 <Card.Img variant="top" src={AWSExample} />
               </Link>
               <Card.Body>
-                <Card.Title>Deploy to AWS example</Card.Title>
+                <Card.Title>Deploy to AWS example - billing issues down currently </Card.Title>
                 <Card.Link href={AWSDoc} target="_blank" rel="noopener noreferrer">AWS Deployment Instructions</Card.Link>
               </Card.Body>
             </Card>
