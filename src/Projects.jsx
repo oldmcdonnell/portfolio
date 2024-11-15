@@ -63,7 +63,7 @@ function Projects() {
               </Card.Body>
             </Card>
             <Card>
-              <Link className="text-light" to=' http://060211867096-roulettech.s3-website.us-east-1.amazonaws.com/'>
+              <Link className="text-light" to='http://060211867096-roulettech.s3-website.us-east-1.amazonaws.com/'>
                 <Card.Img variant="top" src={AWSExample} />
               </Link>
               <Card.Body>
