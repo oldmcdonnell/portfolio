@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Sippy from '../img/sippy.png';
 import TicTacToe from '../img/ticTacToe.jpg';
 import TodoList from '../img/todo_list.jpg';
 import WeatherApp from '../img/weatherApp.jpg';
@@ -18,6 +19,18 @@ function Projects() {
       <Row>
         <Col>
           <CardGroup>
+          <Card>
+              <Link className="text-light" to='https://sippy-prod.vercel.app/'>
+                <Card.Img variant="top" src={Sippy} />
+              </Link>
+              <Card.Body>
+                <Card.Title>Sippy Project</Card.Title>
+                {/* Replace Card.Link with React Router's Link for internal routing */}
+                <Link to="/privacy-paper" className="card-link" target="_blank" rel="noopener noreferrer">
+                Sippy Project WIP. in Next JS and TypeScript with OAuth setup. Will be iplementing google API
+                </Link>
+            </Card.Body>
+            </Card>
             <Card>
               <Link className="text-light" to='https://preferred-polls.vercel.app/'>
                 <Card.Img variant="top" src={PreferredPolls} />
