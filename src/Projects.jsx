@@ -26,7 +26,7 @@ function Projects() {
               <Card.Body>
                 <Card.Title>Sippy Project</Card.Title>
                 {/* Replace Card.Link with React Router's Link for internal routing */}
-                Sippy Project WIP. in Next JS and TypeScript with OAuth setup. Will be iplementing google API
+                Sippy Project WIP. in Next JS and TypeScript with OAuth setup. Will be implementing google API
   
             </Card.Body>
             </Card>
