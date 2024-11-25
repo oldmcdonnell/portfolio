@@ -15,7 +15,7 @@ import PrivacyPaper from './PrivacyPaper';
 
 function Projects() {
   return (
-    <Container>
+    <Container className="animate__animated animate__fadeIn">
       <Row>
         <Col>
           <CardGroup>
