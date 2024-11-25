@@ -16,7 +16,7 @@ import PrivacyPaper from './PrivacyPaper';
 function Projects() {
   return (
     <Container className="animate__animated animate__fadeIn">
-      <Row xs={1} sm={2} md={3} lg={4} className="g-4">
+      <Row>
         <Col>
           <CardGroup>
           <Card>
@@ -26,9 +26,8 @@ function Projects() {
               <Card.Body>
                 <Card.Title>Sippy Project</Card.Title>
                 {/* Replace Card.Link with React Router's Link for internal routing */}
-                <Link to="/privacy-paper" className="card-link" target="_blank" rel="noopener noreferrer">
                 Sippy Project WIP. in Next JS and TypeScript with OAuth setup. Will be iplementing google API
-                </Link>
+  
             </Card.Body>
             </Card>
             <Card>
